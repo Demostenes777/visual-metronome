@@ -1,0 +1,7 @@
+= Metronomo Visual
+
+Este metrónomo ha sido diseñado por Katxarrada Perkusio Taldea para disponer de un metrónomos en entornos ruidosos, aquellos en los que un metrónomo tradional no sirve.
+
+Se presupone un ritmo de 4x4, donde el tempo es ajustable. El metrónomo se puede parar y reanudar en cualquier momento.
+
+
