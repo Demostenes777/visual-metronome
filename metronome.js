@@ -53,6 +53,11 @@ function displayItem(element, i) {
     element.classList.remove('d-none');
     element.classList.add('d-block');
     window.active_item = i;
+    let mySound = new Audio('audio/beep-07a.mp3')
+    if (i == 0) {
+        mySound = new Audio('audio/beep-08b.mp3')
+    } 
+    mySound.play();
 }
 
 function getBpms() {
