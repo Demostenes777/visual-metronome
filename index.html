@@ -3,13 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
     <title>Metronomo</title>
     <script src="metronome.js"></script>
 </head>
@@ -24,36 +19,57 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg">
-                        <div id="first-item" class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
-                            <div class="d-flex align-items-center justify-content-center"><h1 style="font-size:12rem">1</h1></div>
+                        <div id="first-item"
+                            class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h1 style="font-size:8rem">1</h1>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div id="second-item"  class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center border">
-                            <div class="d-flex align-items-center justify-content-center"><h1 style="font-size:12rem">2</h1></div>
+                        <div id="second-item"
+                            class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h1 style="font-size:8rem">2</h1>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div id="third-item"  class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
-                            <div class="d-flex align-items-center justify-content-center"><h1 style="font-size:12rem">3</h1></div>
+                        <div id="third-item"
+                            class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h1 style="font-size:8rem">3</h1>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div id="fourth-item"  class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center border">
-                            <div class="d-flex align-items-center justify-content-center"><h1 style="font-size:12rem">4</h1></div>
+                        <div id="fourth-item"
+                            class="numbered-item d-block p-3 ratio ratio-1x1 rounded-circle overflow-hidden bg-info text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h1 style="font-size:8rem">4</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Modo de visualización</span>
+                            <select class="form-select" aria-describedby="basic-addon2" id="visualization-mode"
+                                onchange="updateVisualization()">
+                                <option value="1">Completo</option>
+                                <option value="2">Solo el 1</option>
+                                <option value="3">El 1 y el 3</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-3">
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">Tempo</span>
+                            <span class="input-group-text" id="basic-addon2">Tempo</span>
                             <input type="number" class="form-control" placeholder="BPM" aria-label="BPM"
-                                aria-describedby="basic-addon1" id="bpm" value="120" min="10" max="240" step="10"
+                                aria-describedby="basic-addon2" id="bpm" value="120" min="10" max="240" step="10"
                                 onchange="runMetronome()">
                         </div>
                     </div>
@@ -63,7 +79,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
