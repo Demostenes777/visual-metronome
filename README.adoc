@@ -4,4 +4,5 @@ Este metrónomo ha sido diseñado por Katxarrada Perkusio Taldea para disponer d
 
 Se presupone un ritmo de 4x4, donde el tempo es ajustable. El metrónomo se puede parar y reanudar en cualquier momento.
 
+Es necesario descargar bootstrap.
 
